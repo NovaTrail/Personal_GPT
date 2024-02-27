@@ -1,0 +1,7 @@
+accelerate==0.27.2
+bitsandbytes==0.42.0
+ipython-genutils==0.2.0
+ipywidgets==7.7.1
+torch @ https://download.pytorch.org/whl/cu121/torch-2.1.0%2Bcu121-cp310-cp310-linux_x86_64.whl#sha256=0d4e8c52a1fcf5ed6cfc256d9a370fcf4360958fc79d0b08a51d55e70914df46
+transformers==4.38.1
+
