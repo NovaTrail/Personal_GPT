@@ -12,11 +12,9 @@ Quick start:
 
   
 ## Features
-
-- **Custom GPT Model Usage:** Choose any Hugging Face GPT model for your agent.
-- **Google Colab Integration:** Benefit from Colab's GPU for quicker responses.
-- **Interactive Chat Interface:** Engage in real-time via an IPython widget chat.
-- **Conversation History:** Keeps track of the chat for context in responses.
+- **Interactive Chat Interface:** Interactive chat interface.  
+- **Personal Model Instance** Your own instance of a LLM model saved to your google drive.
+- **No training with your data:** Previous conversations are not stored or used to train future models.
 
 ## Instructions
 
@@ -36,6 +34,7 @@ With setup complete, use the chat interface in the notebook for conversations. T
 
 ## License
 Open-sourced under MIT license. Refer to the LICENSE file.
+This repository's contents are provided “as is”, without warranty of any kind.
 
 ## Acknowledgments
 
