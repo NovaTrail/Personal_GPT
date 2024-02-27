@@ -33,7 +33,7 @@ With setup complete, use the chat interface in the notebook for conversations. T
 
 
 ## License
-Open-sourced under MIT license. Refer to the LICENSE file.
+Open-sourced under MIT license. Refer to the LICENSE file.\
 This repository's contents are provided “as is”, without warranty of any kind.
 
 ## Acknowledgments
