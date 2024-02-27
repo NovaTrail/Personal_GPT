@@ -34,6 +34,8 @@ Open-sourced under MIt license. Refer to the LICENSE file.
 
 ## Acknowledgments
 
-- Zephyr-7B-β a fine-tuned version of mistralai/Mistral-7B-v0.1. Lewis Tunstall Et al. Oct 2023 (https://arxiv.org/abs/2310.16944).
+- Zephyr-7B-β a fine-tuned version of mistralai/Mistral-7B-v0.1.
+      *Lewis Tunstall Et al.* Oct 2023 (https://arxiv.org/abs/2310.16944).
 - Hugging Face for the Transformers library.
-- Google Colab for GPU resources.
+      *https://huggingface.co/*
+- Google Colab for openly available GPU resources.
