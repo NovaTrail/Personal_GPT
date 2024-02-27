@@ -30,12 +30,10 @@ With setup complete, use the chat interface in the notebook for conversations. T
 
 
 ## License
-Open-sourced under MIt license. Refer to the LICENSE file.
+Open-sourced under MIT license. Refer to the LICENSE file.
 
 ## Acknowledgments
 
-- Zephyr-7B-β a fine-tuned version of mistralai/Mistral-7B-v0.1.
-      *Lewis Tunstall Et al.* Oct 2023 (https://arxiv.org/abs/2310.16944).
-- Hugging Face for the Transformers library.
-      *https://huggingface.co/*
+- Zephyr-7B-β a fine-tuned version of mistralai/Mistral-7B-v0.1. -- *Lewis Tunstall Et al.* Oct 2023 (https://arxiv.org/abs/2310.16944).
+- Hugging Face for the Transformers library. https://huggingface.co/
 - Google Colab for openly available GPU resources.
