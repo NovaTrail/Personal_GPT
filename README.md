@@ -1,13 +1,11 @@
 # Personal GPT Setup
 
 Streamline the creation of your personalized GPT conversational agent with this project, running on Google Colab and utilizing the Hugging Face Transformers library for human-like responses.
+- Requires a Google account with Google Colab access.
 
 <a href="https://colab.research.google.com/github/NovaTrail/Personal_GPT/blob/master/convoGPT.ipynb">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
-- Requires a Google account with Google Colab access.
-
-https://colab.research.google.com/github/NovaTrail/Personal_GPT/blob/master
 
   
 ## Features
@@ -19,7 +17,7 @@ https://colab.research.google.com/github/NovaTrail/Personal_GPT/blob/master
 
 ## Getting Started
 
-1. **Open in Google Colab:** Open the provided notebook in Colab.
+1. **Open in Google Colab:** Open this repo's notebook in Colab:
 - https://colab.research.google.com/github/NovaTrail/Personal_GPT/blob/master/convoGPT.ipynb
 2. **Mount Google Drive:** Follow the notebook's instructions to mount your drive.
 3. **Run Setup Cells:** Runtime -> run all, this will clone the repo and install dependencies.
