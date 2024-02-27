@@ -2,7 +2,7 @@
 
 Streamline the creation of your personalized GPT conversational agent with this project, running on Google Colab and utilizing the Hugging Face Transformers library for human-like responses.
 - Requires a Google account with Google Colab access.
-- Quick start:
+Quick start:
 
 <a href="https://colab.research.google.com/github/NovaTrail/Personal_GPT/blob/master/convoGPT.ipynb">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
