@@ -141,7 +141,7 @@ class ChatBotGPT:
         self.chat_count += 1
         return response
 
-     def chat_box(self):
+    def chat_box(self):
     
             self.reset()
     
