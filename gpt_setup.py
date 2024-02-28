@@ -162,7 +162,7 @@ class ChatBotGPT:
             # Create radio buttons for setting the word limit
             word_limit = widgets.RadioButtons(
                 options=[100, 200, 500],
-                value=50,  # Default value
+                value=100,  # Default value
                 description="Word Limit:",
                 disabled=False,
                 layout=widgets.Layout(flex_flow="row"),  # Set layout as horizontal
