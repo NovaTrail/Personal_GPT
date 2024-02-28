@@ -141,42 +141,61 @@ class ChatBotGPT:
         self.chat_count += 1
         return response
 
-    def chat_box(self):
-        """
-        Sets up and displays the interactive chat UI in Jupyter notebooks.
-        """
-        self.reset()  # Reset conversation history and count
+     def chat_box(self):
+    
+            self.reset()
+    
+            # Create text area input widget
+            text_area_input = widgets.Textarea(
+                value="",
+                placeholder="Write text here...",
+                description="Prompt Input:",
+                disabled=False,
+                layout=widgets.Layout(width="500px", height="auto"),
+            )
+    
+            # Create button widget
+            button = widgets.Button(
+                description="Go",
+                button_style="primary",  # or 'success', 'info'
+                tooltip="Click me",
+            )
+    
+            # Create a slider for setting the word limit
+            # Create radio buttons for setting the word limit
+            word_limit = widgets.RadioButtons(
+                options=[50, 150, 500],
+                value=50,  # Default value
+                description="Word Limit:",
+                disabled=False,
+                layout=widgets.Layout(flex_flow="row"),  # Set layout as horizontal
+            )
+    
+            # Create an output area for responses
+            response_display = widgets.Output(
+                layout={"border": "1px solid black", "width": "600px"}
+            )
+    
+            # Handler function for button click event
+            def handle_click():
+                with response_display:
+    
+                    user_input = text_area_input.value
+                    if not user_input:
+                        return
+                    user_input = user_input.strip()
+                    print(f"**You said:**\n {user_input}")
+                    _word_limit = int(word_limit.value)
+                    print("\n")
+                    # Simulate a response, replace with actual response logic as needed
+                    print("**BotGPT🤖 says:**")
+                    response = self.chat(user_input, max_words=_word_limit)
+                    print(f" {response}\n")
+    
+            # Attach the event handler to the button
+            button.on_click(handle_click)
+    
+            # Display widgets
+            display(response_display, text_area_input, word_limit, button)
+            response_display.clear_output()
 
-        # Setup UI components
-        text_area_input = widgets.Textarea(
-            value="",
-            placeholder="Type your message here...",
-            description="Prompt:",
-            disabled=False,
-            layout=widgets.Layout(width="500px", height="auto"),
-        )
-        button = widgets.Button(
-            description="Send", button_style="primary", tooltip="Click to send message"
-        )
-        word_limit = widgets.RadioButtons(
-            options=[50, 100, 200], value=50, description="Word Limit:", disabled=False
-        )
-        response_display = widgets.Output(
-            layout={"border": "1px solid black", "width": "600px"}
-        )
-
-        # Define button click event handler
-        def on_click(b):
-            with response_display:
-                response_display.clear_output()
-                user_input = text_area_input.value.strip()
-                if not user_input:
-                    print("Please enter a message.")
-                    return
-                word_limit_value = word_limit.value
-                response = self.chat(user_input, max_words=word_limit_value)
-                print(f"Bot: {response}\n")
-
-        # Bind the click event and display the UI
-        button.on_click(on_click)
-        display(widgets.VBox([response_display, text_area_input, word_limit, button]))
