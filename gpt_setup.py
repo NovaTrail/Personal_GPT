@@ -42,7 +42,7 @@ class ChatBotGPT:
         self.chat_count = 0
 
         if os.path.exists(self.save_path):
-            print("Using the model saved on local storage.")
+            print("Using the saved model.")
             self.load_model()
         else:
             print("Downloading the model from Hugging Face.")
