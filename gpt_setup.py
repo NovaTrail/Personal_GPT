@@ -126,17 +126,14 @@ class ChatBotGPT:
                 },
             ]
 
-        try:
-            output = self.pipe(
-                messages,
-                do_sample=True,
-                max_new_tokens=max_words,
-                pad_token_id=self.pipe.tokenizer.eos_token_id,
-            )
-            self.conv_history += " " + output[0]["generated_text"]
-            response = output[0]["generated_text"]
-        except Exception as e:
-            response = f"Error generating response: {e}"
+        output = self.pipe(
+            messages,
+            do_sample=True,
+            max_new_tokens=max_words,
+            pad_token_id=self.pipe.tokenizer.eos_token_id,
+        )
+        self.conv_history += str(output)
+        output = output[2]["content"]
 
         self.chat_count += 1
         return response
@@ -164,7 +161,7 @@ class ChatBotGPT:
             # Create a slider for setting the word limit
             # Create radio buttons for setting the word limit
             word_limit = widgets.RadioButtons(
-                options=[50, 150, 500],
+                options=[100, 200, 500],
                 value=50,  # Default value
                 description="Word Limit:",
                 disabled=False,
