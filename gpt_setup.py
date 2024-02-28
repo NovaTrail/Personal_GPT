@@ -166,7 +166,7 @@ class ChatBotGPT:
         )
 
         # Define button click event handler
-        def on_click():
+        def on_click(b):
             with response_display:
                 response_display.clear_output()
                 user_input = text_area_input.value.strip()
