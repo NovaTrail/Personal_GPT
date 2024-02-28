@@ -177,7 +177,7 @@ class ChatBotGPT:
             )
     
             # Handler function for button click event
-            def handle_click():
+            def handle_click(event):
                 with response_display:
     
                     user_input = text_area_input.value
