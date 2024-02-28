@@ -136,7 +136,7 @@ class ChatBotGPT:
         output = output[2]["content"]
 
         self.chat_count += 1
-        return response
+        return output
 
     def chat_box(self):
     
