@@ -68,6 +68,17 @@ class ChatBotGPT:
         self.conv_history = ""
         self.chat_count = 0
 
+    def load_prompt(self):
+        if os.path.exists("prompt.txt"):
+            # print("found the text file")
+            with open("prompt.txt", "r") as file:
+                # Read the contents of the file
+                file_contents = file.read()
+            self.sys_prompt += str(file_contents)
+        else:
+            # print("text file not found")
+            pass
+
     def download_and_save_model(self):
         """
         Downloads and saves the model specified by HF_MODEL_NAME.
