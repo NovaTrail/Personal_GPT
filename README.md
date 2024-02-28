@@ -29,15 +29,14 @@ Quick start:
 - **Prompt.txt:** Edit for different bot contexts.
 
 ## Usage
-The model may produce inaccurate, biased or other objectionable responses to user prompts. Always check information.\
-4-bit Model Quantization has been used to reduce the size of the Neural-network. This reduces the model's performance compared to the 'full size' model.
+The model may produce inaccurate, biased or other objectionable responses to user prompts.\
+This repository's contents are provided “as is”, without warranty of any kind.\
+4-bit model quantization has been used to reduce the size of the neural-network. This reduces the model's performance compared to the 'full size' model.
 
 ## License
-Open-sourced under MIT license. Refer to the LICENSE file.\
-This repository's contents are provided “as is”, without warranty of any kind.
+Open-sourced under MIT license. Refer to the LICENSE file.
 
 ## Acknowledgments
-
-- Zephyr-7B-β a fine-tuned version of mistralai/Mistral-7B-v0.1. -- *Lewis Tunstall Et al.* Oct 2023 (https://arxiv.org/abs/2310.16944).
+- Zephyr-7B-β a fine-tuned version of mistralai/Mistral-7B-v0.1. -- *Lewis Tunstall Et al. [Oct 2023]* (https://arxiv.org/abs/2310.16944).
 - Hugging Face for the Transformers library. https://huggingface.co/
 - Google Colab for openly available GPU resources.
