@@ -29,8 +29,8 @@ Quick start:
 - **Prompt.txt:** Edit for different bot contexts.
 
 ## Usage
-With setup complete, use the chat interface in the notebook for conversations. Tweak the system prompt and model for your style.
-
+The model may produce inaccurate, biased or other objectionable responses to user prompts. Always check information.\
+4-bit Model Quantization has been used to reduce the size of the Neural-network. This reduces the model's performance compared to the 'full size' model.
 
 ## License
 Open-sourced under MIT license. Refer to the LICENSE file.\
